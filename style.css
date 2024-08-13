@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #9d9fba;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #ba9898;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.cell:hover {
+    background: linear-gradient(to bottom right, #daa4a4, rgba(224, 224, 224, 0));
+}
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: rgb(5, 29, 77);
+    /* background: rgb(213, 184, 184); */
+  }
